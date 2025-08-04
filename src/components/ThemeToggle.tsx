@@ -1,5 +1,6 @@
 import useDarkMode from "../hooks/useDarckMode";
-import { Moon, Sun } from "lucide-react"; // Optional: install lucide icons
+import LightModeSvg from "../assets/Light-mode.svg";
+import NightModeSvg from "../assets/Night-mode.svg";
 
 const ThemeToggle = () => {
   const { theme, toggleTheme } = useDarkMode();
@@ -7,13 +8,20 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="bg-slate-200 dark:bg-slate-700 p-2 rounded-full transition"
-      aria-label="Toggle dark mode"
-    >
+      className="relative hover:bg-sage-300 hover:bg-opacity-20 mt-12 p-1 rounded-full transition"
+      aria-label="Toggle dark mode">
       {theme === "dark" ? (
-        <Sun className="w-5 h-5 text-yellow-300" />
+        <img
+          src={LightModeSvg}
+          alt="Switch to light mode"
+          className="w-10 h-10"
+        />
       ) : (
-        <Moon className="w-5 h-5 text-gray-700" />
+        <img
+          src={NightModeSvg}
+          alt="Switch to dark mode"
+          className="w-10 h-10"
+        />
       )}
     </button>
   );

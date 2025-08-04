@@ -40,13 +40,13 @@ const Header: React.FC = () => {
         </div>
 
         {/* Main Navigation Centered */}
-        <nav className="flex flex-col flex-1 justify-end items-end">
+        <nav className="flex flex-col flex-1 justify-end items-end mt-20">
           <ul className="space-y-2">
             {navLinks.map((link) => (
               <li key={link}>
                 <a
                   href={`#${link}`}
-                  className="group inline-block relative font-serif font-normal text-[9rem] text-neutral-700 md:text-[10rem] leading-none"
+                  className="group inline-block relative font-serif font-normal text-[8rem] text-neutral-700 md:text-[8rem] leading-none"
                   style={{ lineHeight: 1.1 }}>
                   <span
                     className="top-2/3 left-3 -z-10 absolute bg-lime-800 opacity-70 group-hover:opacity-90 h-1/3 transition-all -translate-y-1/2 duration-200"
