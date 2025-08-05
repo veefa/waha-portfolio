@@ -1,2 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 @import "tailwindcss";
 @import "tailwindcss/utilities";
+
+@import "tailwindcss";
+@theme {
+  --color-sage-300: rgb(161, 177, 132);
+  --color-olive-500: rgb(98, 106, 72);
+  --color-graphite-700: rgb(64, 64, 64);
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --font-karma: "Karma", sans-serif;
+  --font-Italiana: "Italiana", serif;
+}

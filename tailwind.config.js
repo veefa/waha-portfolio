@@ -17,6 +17,10 @@ module.exports = {
           50: "#FAF9F6",
         },
       },
+      fontFamily: {
+        karma: ["Karma", "serif"],
+        serif: ["Karma", "serif"],
+      },
     },
   },
   plugins: [],

@@ -8,7 +8,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="relative hover:bg-sage-300 hover:bg-opacity-20 mt-12 p-1 rounded-full transition"
+      className="relative hover:bg-neutral-700 hover:bg-opacity-20 mt-12 p-1 rounded-full transition"
       aria-label="Toggle dark mode">
       {theme === "dark" ? (
         <img
