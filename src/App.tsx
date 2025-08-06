@@ -1,36 +1,17 @@
 import React from "react";
-import { PiCopyrightBold } from "react-icons/pi";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
-import Header from "./components/Header";
-import Hero from "./sections/Hero";
-import Menu from "./components/Menu";
-/*import About from "./sections/About";
-import Work from "./sections/Work";
-import Contact from "./sections/Contact";
-import SocialLinks from "./components/SocialLinks";*/
+import Home from "./pages/Home";
+import Work from "./pages/Work";
 
 const App: React.FC = () => {
   return (
-    <>
-      <div></div>
-      <div className="bg-neutral-50-500 w-screen h-screen overflow-hidden text-graphite-900">
-        <Menu />
-        <Header />
-        <Hero />
-
-        {/* <About /> */}
-        {/* <Work /> */}
-        {/* <Contact /> */}
-        {/* <SocialLinks /> */}
-      </div>
-      <footer className="bottom-25 left-6 fixed text-olive-500 rotate-90 origin-bottom-left transform">
-        <p className="flex items-center gap-1">
-          <PiCopyrightBold />
-          2025
-        </p>
-      </footer>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/work" element={<Work />} />
+      </Routes>
+    </Router>
   );
 };
 
