@@ -12,13 +12,49 @@ const socialLinks = [
 const Header: React.FC = () => {
   return (
     <header className="relative z-1">
-      <div className="flex flex-row justify-between items-start mx-auto px-4 sm:px-6 lg:px-8 pt-8 max-w-7xl">
-        {/* Social Links Vertical - Left side as per design spec */}
-        <div className="hidden md:flex flex-col items-start gap-2 -ml-30 pt-4 min-w-[120px]">
+      {/* Mobile Navigation - 30% smaller, centered */}
+      <div className="2xl:hidden flex justify-center">
+        <nav className="flex flex-col items-center">
+          <ul className="flex flex-col items-center space-y-3">
+            {navLinks.map((link) => (
+              <li key={link}>
+                {link === "work" || link === "about" ? (
+                  <Link
+                    to={`/${link}`}
+                    className="group inline-block relative font-Italiana font-normal text-[5.6rem] text-graphite-700 leading-none"
+                    style={{ lineHeight: 1.1 }}>
+                    <span
+                      className="top-2/3 left-3 -z-10 absolute bg-sage-300 opacity-70 group-hover:opacity-90 h-1/3 transition-all -translate-y-1/2 duration-200"
+                      style={{ width: "calc(100% - 12px)" }}
+                    />
+                    {link}
+                  </Link>
+                ) : (
+                  <a
+                    href={`#${link}`}
+                    className="group inline-block relative font-Italiana font-normal text-[5.6rem] text-graphite-700 leading-none"
+                    style={{ lineHeight: 1.1 }}>
+                    <span
+                      className="top-2/3 left-3 -z-10 absolute bg-sage-300 opacity-70 group-hover:opacity-90 h-1/3 transition-all -translate-y-1/2 duration-200"
+                      style={{ width: "calc(100% - 12px)" }}
+                    />
+                    {link}
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+
+      {/* Desktop Layout */}
+      <div className="hidden 2xl:flex flex-row justify-between items-start mx-auto px-4 sm:px-6 lg:px-8 pt-8 max-w-7xl">
+        {/* Social Links */}
+        <div className="flex flex-col items-start gap-2 -ml-30 pt-4 min-w-[120px]">
           {/* Top border line */}
           <div className="mb-3 ml-1 border-olive-500 border-l-4 h-15" />
 
-          {/* Social Links - Left end: horizontal social links */}
+          {/* Social Links */}
           {socialLinks.map((link) => (
             <a
               key={link.label}
@@ -35,9 +71,8 @@ const Header: React.FC = () => {
           <div className="mt-3 ml-1 border-olive-500 border-l-4 h-60" />
         </div>
 
-        {/* Main Navigation - Right end as per design spec */}
+        {/* Main Navigation  */}
         <nav className="flex flex-col justify-end items-end mt-20 min-w-fit">
-          {/* Nav link style: Font: Karma, Color: neutral-700, Background: lime-800 rectangle with opacity-70, Hover: rectangle opacity-90, Positioned far right, aligned down with menu height */}
           <ul className="text-left">
             {navLinks.map((link) => (
               <li key={link}>

@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
   return (
-    <div className="bg-linen-50 w-screen h-screen overflow-hidden text-neutral-800 ">
-      <div className="mx-auto max-w-6xl h-full">
+    <div className="bg-linen-50 min-h-screen w-full overflow-x-hidden text-neutral-800">
+      <div className="mx-auto max-w-6xl min-h-screen px-4 sm:px-6 lg:px-8">
         {/* Left side navigation */}
-        <div className="top-8 left-8 fixed">
+        <div className="top-8 left-4 sm:left-8 fixed z-20">
           <div className="flex flex-col items-start">
             <div className="mb-7 ml-4 border-olive-500 border-l-2 h-15" />
             <Link
@@ -19,15 +19,20 @@ const About: React.FC = () => {
           </div>
         </div>
 
+        {/* Profile image - Top on small screens */}
+        <div className="flex justify-center pt-20 pb-8 lg:hidden">
+          <div className="border-4 border-sage-300 rounded-sm w-48 h-60 sm:w-56 sm:h-70"></div>
+        </div>
+
         {/* Main Content */}
-        <div className="flex justify-between items-start pt-8 pr-8 pl-20  h-full">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start pt-8 lg:pt-20 pr-4 sm:pr-8 pl-16 sm:pl-20 pb-8">
           {/* Left Content Area */}
-          <div className="max-w-2xl">
+          <div className="max-w-2xl w-full lg:w-auto">
             <div className="text-center mb-8">
-              <h1 className="inline-block z-1 relative font-Italiana text-graphite-700 text-7xl cursor-pointer">
+              <h1 className="inline-block z-1 relative font-Italiana text-graphite-700 text-5xl sm:text-6xl lg:text-7xl cursor-pointer">
                 <span
-                  className="top-3/5 left-1 -z-10 absolute bg-sage-300  group-hover:opacity-90 h-1/2  transition-all -translate-y-1/2 duration-200"
-                  style={{ width: "calc(190px)" }}
+                  className="top-3/5 left-1 -z-10 absolute bg-sage-300 group-hover:opacity-90 h-1/2 transition-all -translate-y-1/2 duration-200"
+                  style={{ width: "calc(100% - 8px)" }}
                 />
                 about.
               </h1>
@@ -133,16 +138,14 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Profile Image Area */}
-          <div className="flex-shrink-0 ml-12">
-            <div className="border-4 border-sage-300 rounded-sm w-64 h-80">
-              {/* Profile image placeholder */}
-            </div>
+          {/* Profile image - Right side on large screens */}
+          <div className="hidden lg:flex flex-shrink-0 lg:ml-12">
+            <div className="border-4 border-sage-300 rounded-sm w-64 h-80"></div>
           </div>
         </div>
 
         {/* Bottom left copyright */}
-        <div className="bottom-8 left-8 fixed">
+        <div className="bottom-8 left-4 sm:left-8 fixed">
           <p className="text-olive-500 text-sm whitespace-nowrap -rotate-90 origin-bottom-left transform">
             © 2025
           </p>
