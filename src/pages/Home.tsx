@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   return (
     <>
       <div></div>
-      <div className="bg-neutral-50-500 w-screen h-screen overflow-hidden text-graphite-900">
+      <div className="bg-Linen-50 w-screen h-screen overflow-hidden text-graphite-900">
         <Menu />
         <Header />
         <Hero />

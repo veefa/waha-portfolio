@@ -28,20 +28,26 @@ const Work: React.FC = () => {
           </div>
         </div>
 
-        {/* Project Grid */}
-        <div className="top- right-8 fixed max-w-md">
-          <div className="gap-1 grid grid-cols-1">
-            {projects.map((project, index) => (
-              <div key={project.name} className="group">
-                <h2 className="font-Italiana font-normal text-sage-300 hover:text-olive-500 text-5xl md:text-8xl leading-none transition-colors cursor-pointer">
-                  {project.name}
-                </h2>
-                {index < projects.length - 1 && (
-                  <div className="bg-sage-300 opacity-20 mt-4 h-px"></div>
-                )}
-              </div>
-            ))}
-          </div>
+        {/* Projects List - Right aligned like nav */}
+        <div className="top-8 right-20 fixed flex flex-col items-end space-y-6">
+          {projects.map((project, index) => (
+            <div key={project.name} className="group relative">
+              <h2
+                className="relative font-Italiana font-normal text-Linen-50 hover:text-olive-500 text-6xl leading-none transition-colors cursor-pointer"
+                style={{ lineHeight: 1.1 }}>
+                <span
+                  className="top-2/3 left-0 -z-10 absolute bg-sage-300 opacity-70 group-hover:opacity-90 h-1/3 transition-all -translate-y-1/2 duration-200"
+                  style={{ width: "calc(100% - 12px)" }}
+                />
+                {project.name}
+              </h2>
+
+              {/* Optional divider like before */}
+              {index < projects.length - 1 && (
+                <div className="bg-sage-300 opacity-20 mt-4 w-full h-px"></div>
+              )}
+            </div>
+          ))}
         </div>
 
         {/* Spacer to maintain layout flow */}
@@ -53,7 +59,7 @@ const Work: React.FC = () => {
             work
           </h1>
 
-          <p className="opacity-70 mb-12 max-w-xl font-light text-neutral-50 text-sm leading-relaxed">
+          <p className="opacity-90 mb-12 max-w-xl font-light text-Linen-50 text-sm leading-relaxed">
             "This is a curated collection of my personal productivity tools and
             web projects, designed to help people manage their time, tasks, and
             habits more effectively. From visual scheduling systems like Lazy

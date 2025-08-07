@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
         {/* Main Navigation - Right end as per design spec */}
         <nav className="flex flex-col justify-end items-end mt-20 min-w-fit">
-          {/* Nav link style: */}
+          {/* Nav link style: Font: Karma, Color: neutral-700, Background: lime-800 rectangle with opacity-70, Hover: rectangle opacity-90, Positioned far right, aligned down with menu height */}
           <ul className="text-left">
             {navLinks.map((link) => (
               <li key={link}>
