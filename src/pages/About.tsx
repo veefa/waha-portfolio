@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
   return (
-    <div className="bg-linen-50 w-screen h-screen overflow-hidden text-neutral-800">
+    <div className="bg-linen-50 w-screen h-screen overflow-hidden text-neutral-800 ">
       <div className="mx-auto max-w-6xl h-full">
         {/* Left side navigation */}
-        <div className="top-8 left-8 z-10 fixed">
+        <div className="top-8 left-8 fixed">
           <div className="flex flex-col items-start">
             <div className="mb-7 ml-4 border-olive-500 border-l-2 h-15" />
             <Link
@@ -20,63 +20,62 @@ const About: React.FC = () => {
         </div>
 
         {/* Main Content */}
-        <div className="flex justify-between items-start pt-8 pr-8 pl-20 h-full">
+        <div className="flex justify-between items-start pt-8 pr-8 pl-20  h-full">
           {/* Left Content Area */}
           <div className="max-w-2xl">
-            <h1 className="inline box-decoration-clone bg-sage-300 px-2 font-Italiana text-graphite-700 text-6xl">
-              about.
-            </h1>
+            <div className="text-center mb-8">
+              <h1 className="inline-block z-1 relative font-Italiana text-graphite-700 text-7xl cursor-pointer">
+                <span
+                  className="top-3/5 left-1 -z-10 absolute bg-sage-300  group-hover:opacity-90 h-1/2  transition-all -translate-y-1/2 duration-200"
+                  style={{ width: "calc(190px)" }}
+                />
+                about.
+              </h1>
+            </div>
 
-            <div className="space-y-6 text-neutral-700 text-sm leading-relaxed">
+            <div className="space-y-4  text-olive-500 text-sm leading-relaxed">
               <p>
-                I'm WAFA. A frontend developer, web content builder, and
+                I'm VEEFA. A frontend developer, web content builder, and
                 productivity-focused problem solver.
               </p>
 
               <p>
-                I've always been drawn to the intersection of structure and
-                creativity — how a few lines of code can shape experiences that
-                help people feel more focused than frustrated. From an early
-                start with a curiosity for how things work to building tools
-                that put people first, I try to create experiences that feel
-                intuitive and useful.
+                I’ve always been drawn to where structure meets creativity .
+                What began as a curiosity for how things work has grown into
+                building tools.
               </p>
 
               <p>
-                Over time, I found myself designing and developing tools I
-                self-created — like Lazy Schedule, Habit Pro, Chore Wheel, and
-                Custom Mate. The flow — tackling the form, then a real need. I
-                say old and shaped with interaction to make everything more
-                clear for myself and potential collaborators.
+                Along the way, I started creating tools I wished existed — like
+                Lazy Schedule, TaskFlow, Chore Wheel, and custom Habit Trackers.
+                Each one grew from a real need, built with care to make
+                productivity more visual, intentional, and personal.
               </p>
 
               <p>
                 What excites me most about frontend development is bringing
-                ideas to life — turning concepts into interactive tools that
-                people, online, and actually useful. It's a visual feeling to
-                say something building for the sake of it. It's about solving
-                problems directly and helping people use technology in the web
-                more purposeful.
+                ideas to life. It’s about solving real problems, not just adding
+                features, and helping people use tech with more purpose.
               </p>
             </div>
 
             {/* Quote Section */}
-            <div className="my-8 py-4">
-              <p className="text-neutral-600 text-sm italic">
-                One quote that guides me by Antoine de Saint-Exupéry:
+            <div className="my-5 py-2">
+              <p className="text-olive-500 text-sm font-extralight italic">
+                One quote that guides me by Maya Angelou:
               </p>
-              <blockquote className="mt-2 text-neutral-700 text-base italic">
-                "Perfection is achieved not when there is nothing more to add,
-                but when there is nothing left to take away."
+              <blockquote className="mt-2 text-olive-500  font-Italiana font-bold">
+                “Do the best you can until you know better. Then when you know
+                better, do better.”
               </blockquote>
             </div>
 
             {/* Experience Section */}
             <div className="mb-8">
-              <h3 className="mb-4 font-semibold text-neutral-800 text-lg">
+              <h3 className="mb-4 font-semibold text-olive-500 text-md">
                 Experience
               </h3>
-              <ul className="space-y-2 text-neutral-700 text-sm">
+              <ul className="text-olive-500 text-sm leading-relaxed">
                 <li>
                   • Bachelor's Degree in Applied Mathematics and Computer
                   Science
@@ -90,11 +89,11 @@ const About: React.FC = () => {
                 </li>
               </ul>
 
-              <div className="mt-4">
-                <p className="mb-2 font-medium text-neutral-800 text-sm">
-                  During that time, I've:
+              <div className="mt-3">
+                <p className="mb-4 font-semibold text-olive-500 text-md">
+                  During time, I've:
                 </p>
-                <ul className="space-y-1 text-neutral-700 text-sm">
+                <ul className="text-olive-500 text-sm leading-relaxed">
                   <li>
                     • Designed and built, productivity apps using React +
                     TypeScript + Tailwind
@@ -121,10 +120,10 @@ const About: React.FC = () => {
 
             {/* Skills Section */}
             <div>
-              <h3 className="mb-3 font-semibold text-neutral-800 text-lg">
+              <h3 className="mb-4 font-semibold text-olive-500 text-md">
                 Skills
               </h3>
-              <p className="text-neutral-700 text-sm leading-relaxed">
+              <p className="text-olive-500 text-sm leading-relaxed">
                 Frontend Development / UI Design / Product Thinking / Problem
                 Solving / React / TypeScript / JavaScript / HTML & CSS /
                 Tailwind CSS / SVG Design / Figma / Git / Responsive Design /
@@ -136,7 +135,7 @@ const About: React.FC = () => {
 
           {/* Right Profile Image Area */}
           <div className="flex-shrink-0 ml-12">
-            <div className="bg-linen-300 border-2 border-sage-300 w-64 h-80">
+            <div className="border-4 border-sage-300 rounded-sm w-64 h-80">
               {/* Profile image placeholder */}
             </div>
           </div>
