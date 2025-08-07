@@ -11,7 +11,7 @@ const socialLinks = [
 
 const Header: React.FC = () => {
   return (
-    <header className="relative">
+    <header className="relative z-1">
       <div className="flex flex-row justify-between items-start mx-auto px-4 sm:px-6 lg:px-8 pt-8 max-w-7xl">
         {/* Social Links Vertical - Left side as per design spec */}
         <div className="hidden md:flex flex-col items-start gap-2 -ml-30 pt-4 min-w-[120px]">
@@ -41,10 +41,10 @@ const Header: React.FC = () => {
           <ul className="text-left">
             {navLinks.map((link) => (
               <li key={link}>
-                {link === "work" ? (
+                {link === "work" || link === "about" ? (
                   <Link
-                    to="/work"
-                    className="group inline-block relative font-Italiana font-normal text-[8rem] text-graphite-700 md:text-[8rem] leading-none"
+                    to={`/${link}`}
+                    className="mylink group inline-block relative font-Italiana font-normal text-[8rem] text-graphite-700 md:text-[8rem] leading-none"
                     style={{ lineHeight: 1.1 }}>
                     <span
                       className="top-2/3 left-3 -z-10 absolute bg-sage-300 opacity-70 group-hover:opacity-90 h-1/3 transition-all -translate-y-1/2 duration-200"

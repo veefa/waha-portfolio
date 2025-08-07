@@ -50,8 +50,7 @@ const Work: React.FC = () => {
             <div className="mb-7 ml-4 border-olive-500 border-l-2 h-15" />
             <Link
               to="/"
-              className="text-sage-300 hover:text-olive-500 whitespace-nowrap rotate-180 origin-center transition-colors transform"
-              style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}>
+className="font-semibold text-sage-300 hover:text-olive-500 text-lg hover:decoration-3 hover:decoration-olive-500 hover:underline whitespace-nowrap rotate-180 origin-center transition-colors transform"              style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}>
               Home
             </Link>
             <div className="mt-7 ml-4 border-olive-500 border-l-2 h-55" />
@@ -68,7 +67,7 @@ const Work: React.FC = () => {
                 rel="noopener noreferrer"
                 className="block">
                 <h2
-                  className="relative font-Italiana font-normal text-Linen-50 hover:text-olive-500 text-6xl leading-none transition-colors cursor-pointer"
+                  className="relative font-Italiana font-normal text-linen-50 hover:text-olive-500 text-6xl leading-none transition-colors cursor-pointer"
                   style={{ lineHeight: 1.1 }}>
                   <span
                     className="top-2/3 left-0 -z-10 absolute bg-sage-300 opacity-70 group-hover:opacity-90 h-1/3 transition-all -translate-y-1/2 duration-200"
@@ -96,7 +95,7 @@ const Work: React.FC = () => {
             <div className="bg-sage-300 mt-2 w-30 h-1"></div>
           </h1>
 
-          <p className="opacity-90 mb-12 max-w-xl font-light text-Linen-50 text-md leading-relaxed">
+          <p className="opacity-90 mb-12 max-w-xl font-light text-linen-50 text-md leading-relaxed">
             "This is a curated collection of my personal productivity tools and
             web projects, designed to help people manage their time, tasks, and
             habits more effectively. From visual scheduling systems like Lazy
@@ -110,7 +109,7 @@ const Work: React.FC = () => {
 
         {/* Bottom left copyright */}
         <div className="bottom-8 left-8 fixed">
-          <p className="text-sage-300 text-sm whitespace-nowrap -rotate-90 origin-bottom-left transform">
+          <p className="text-linen-300 text-sm whitespace-nowrap -rotate-90 origin-bottom-left transform">
             © 2025
           </p>
         </div>

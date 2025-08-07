@@ -7,8 +7,7 @@ import Hero from "../sections/Hero";
 const Home: React.FC = () => {
   return (
     <>
-      <div></div>
-      <div className="bg-Linen-50 w-screen h-screen overflow-hidden text-graphite-900">
+      <div className="bg-linen-50 w-screen h-screen overflow-hidden text-graphite-900">
         <Menu />
         <Header />
         <Hero />
