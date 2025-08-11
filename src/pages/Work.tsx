@@ -171,7 +171,7 @@ const Work: React.FC = () => {
           </div>
         </div>
 
-        {/* Desktop Bottom left copyright */}
+        {/* Desktop copyright */}
         <div className="bottom-8 left-8 fixed hidden lg:block">
           <p className="text-linen-300 text-sm whitespace-nowrap -rotate-90 origin-bottom-left transform">
             © 2025

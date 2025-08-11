@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { X } from "lucide-react";
-import MenuSvg from "../assets/menu.svg";
 
 interface MenuProps {
   isOpen?: boolean;
@@ -27,9 +26,18 @@ const Menu: React.FC<MenuProps> = ({ isOpen = false, onToggle }) => {
         {!menuOpen && (
           <button
             onClick={toggleMenu}
-            className="hover:bg-olive-500 hover:bg-opacity-20 p-3 rounded transition"
+            className="hover:bg-olive-500 hover:bg-opacity-20 p-3 rounded transition text-sage-300"
             aria-label="Toggle menu">
-            <img src={MenuSvg} alt="Menu" className="w-10 h-4" />
+            <svg
+              width="42"
+              height="28"
+              viewBox="0 0 42 28"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="3">
+              <line x1="3" y1="6" x2="42" y2="6"></line>
+              <line x1="15" y1="18" x2="42" y2="18"></line>
+            </svg>
           </button>
         )}
       </div>
@@ -62,19 +70,6 @@ const Menu: React.FC<MenuProps> = ({ isOpen = false, onToggle }) => {
             onClick={closeMenu}>
             E-mail
           </a>
-
-          {/* Optional: Navigation Links */}
-          <div className="mt-2 pt-2 border-sage-300 border-t">
-            {["work", "about", "contact"].map((link) => (
-              <a
-                key={link}
-                href={`#${link}`}
-                className="block hover:bg-sage-300 px-2 py-1 rounded text-lg capitalize transition"
-                onClick={closeMenu}>
-                {link}
-              </a>
-            ))}
-          </div>
         </div>
       )}
     </div>

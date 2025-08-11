@@ -18,7 +18,7 @@ const Header: React.FC = () => {
           <ul className="flex flex-col items-center space-y-3">
             {navLinks.map((link) => (
               <li key={link}>
-                {link === "work" || link === "about" ? (
+                {link === "work" || link === "about" || link === "contact" ? (
                   <Link
                     to={`/${link}`}
                     className="group inline-block relative font-Italiana font-normal text-[5.6rem] text-graphite-700 leading-none"
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
           <ul className="text-left">
             {navLinks.map((link) => (
               <li key={link}>
-                {link === "work" || link === "about" ? (
+                {link === "work" || link === "about" || link === "contact" ? (
                   <Link
                     to={`/${link}`}
                     className="mylink group inline-block relative font-Italiana font-normal text-[8rem] text-graphite-700 md:text-[8rem] leading-none"
