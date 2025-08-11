@@ -16,12 +16,12 @@ const Home: React.FC = () => {
   return (
     <>
       <div className="bg-linen-50 min-h-screen w-full overflow-x-hidden text-graphite-900">
-        {/* Mobile & Tablet Layout (up to lg breakpoint) */}
-        <div className="lg:hidden">
+        {/* Mobile & Tablet Layout (up to 2xl breakpoint) */}
+        <div className="2xl:hidden">
           {/* Social Links and Menu */}
           <div className="flex justify-between items-start px-9 pt-9 pb-2">
-            {/* Horizontal social links for mobile/tablet */}
-            <div className="flex flex-row items-center gap-4">
+            {/* Social links for mobile/tablet */}
+            <div className="flex flex-row items-center gap-4 2xl:hidden">
               {socialLinks.map((link) => (
                 <a
                   key={link.label}
@@ -43,8 +43,8 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        {/* Desktop Layout (lg and above) */}
-        <div className="hidden lg:block">
+        {/* Desktop Layout (2xl and above) */}
+        <div className="hidden 2xl:block">
           <div className="flex justify-between items-start px-9 pt-9 pb-2">
             <div></div>
             <Menu />
@@ -60,12 +60,12 @@ const Home: React.FC = () => {
       </div>
 
       {/* Mobile Footer - Centered */}
-      <div className="lg:hidden bottom-4 left-0 right-0 z-10 fixed text-center">
+      <div className="2xl:hidden bottom-4 left-0 right-0 z-10 fixed text-center">
         <p className="text-olive-500 text-xs">© 2025</p>
       </div>
 
       {/* Desktop Footer - Vertical */}
-      <footer className="hidden lg:block bottom-4 sm:bottom-6 lg:bottom-25 left-4 sm:left-6 fixed text-olive-500 -rotate-90 origin-bottom-left transform">
+      <footer className="hidden 2xl:block bottom-4 sm:bottom-6 lg:bottom-25 left-4 sm:left-6 fixed text-olive-500 -rotate-90 origin-bottom-left transform">
         <p className="flex items-center gap-1 text-xs sm:text-sm">
           <PiCopyrightBold />
           2025
