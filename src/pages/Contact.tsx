@@ -11,9 +11,192 @@ const Contact: React.FC = () => {
 
   return (
     <div className="bg-neutral-800 w-screen min-h-screen overflow-x-hidden text-linen-50">
-      <div className="mx-auto max-w-6xl min-h-screen relative">
-        {/* Left side navigation - Desktop only */}
-        <div className="top-8 left-8 z-10 fixed hidden lg:block">
+      {/* Mobile Layout (sm and below) */}
+      <div className="md:hidden min-h-screen relative">
+        {/* Mobile menu button - Top right */}
+        <div className="top-4 right-4 z-10 fixed">
+          <Menu isOpen={isMenuOpen} onToggle={toggleMenu} />
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className="pt-4 px-4">
+          <Link
+            to="/"
+            className="inline-flex items-center text-sage-300 hover:text-olive-500 text-sm font-semibold transition-colors">
+            ← Back to Home
+          </Link>
+        </div>
+
+        {/* Mobile main content */}
+        <div className="flex flex-col justify-center items-start min-h-screen px-4 py-12">
+          {/* Mobile Hello heading with background */}
+          <div className="mb-6">
+            <div className="relative inline-block">
+              <div className="left-3 absolute inset-x-1 bottom-4 bg-olive-500 opacity-90 h-1/3"></div>
+              <h1 className="font-Italiana text-5xl relative z-10 px-3 py-2">
+                Hello.
+              </h1>
+            </div>
+          </div>
+
+          {/* Mobile Description text */}
+          <div className="mb-6 max-w-xs text-sage-300">
+            <p className="text-sm leading-relaxed mb-3">
+              Your ideas deserve more than a template.
+            </p>
+            <p className="text-xs leading-relaxed">
+              Let's build a digital space that's uniquely yours — designed with
+              intention, developed with care.
+            </p>
+          </div>
+
+          {/* Mobile Contact email */}
+          <div className="mb-6 text-sage-300">
+            <p className="text-xs mb-1">E-mail:</p>
+            <a
+              href="mailto:vee@mail.com"
+              className="font-semibold text-sm hover:text-linen-50 transition-colors duration-200">
+              vee@mail.com
+            </a>
+          </div>
+
+          {/* Mobile Social links */}
+          <div className="mb-8 text-sage-300">
+            <p className="text-xs mb-2">internet:</p>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://figma.com/@wafae"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-bold tracking-wider underline underline-offset-2 hover:text-linen-50 transition-colors duration-200">
+                Fig
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-bold tracking-wider underline underline-offset-2 hover:text-linen-50 transition-colors duration-200">
+                Gla
+              </a>
+              <a
+                href="https://github.com/veefa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-bold tracking-wider underline underline-offset-2 hover:text-linen-50 transition-colors duration-200">
+                Git
+              </a>
+              <a
+                href="https://linkedin.com/in/wafae"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-bold tracking-wider underline underline-offset-2 hover:text-linen-50 transition-colors duration-200">
+                Lin
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile copyright - Fixed at bottom */}
+        <div className="bottom-4 left-0 right-0 z-10 fixed text-center">
+          <p className="text-olive-500 text-xs">© 2025</p>
+        </div>
+      </div>
+
+      {/* Tablet Layout (md to lg) */}
+      <div className="hidden md:block lg:hidden min-h-screen relative">
+        {/* Tablet menu button - Top right */}
+        <div className="top-6 right-6 z-10 fixed">
+          <Menu isOpen={isMenuOpen} onToggle={toggleMenu} />
+        </div>
+
+        {/* Tablet Navigation */}
+        <div className="pt-6 px-6">
+          <Link
+            to="/"
+            className="inline-flex items-center text-sage-300 hover:text-olive-500 text-sm font-semibold transition-colors">
+            ← Back to Home
+          </Link>
+        </div>
+
+        {/* Tablet main content */}
+        <div className="flex flex-col justify-center items-start min-h-screen px-8 py-16">
+          {/* Tablet Hello heading with background */}
+          <div className="mb-10">
+            <div className="relative inline-block">
+              <div className="left-5 absolute inset-x-3 bottom-6 bg-olive-500 opacity-90 h-1/3"></div>
+              <h1 className="font-Italiana text-7xl relative z-10 px-5 py-3">
+                Hello.
+              </h1>
+            </div>
+          </div>
+
+          {/* Tablet Description text */}
+          <div className="mb-10 max-w-md text-sage-300">
+            <p className="text-base leading-relaxed mb-4">
+              Your ideas deserve more than a template.
+            </p>
+            <p className="text-sm leading-relaxed">
+              Let's build a digital space that's uniquely yours — designed with
+              intention, developed with care.
+            </p>
+          </div>
+
+          {/* Tablet Contact email */}
+          <div className="mb-10 text-sage-300">
+            <p className="text-sm mb-2">E-mail:</p>
+            <a
+              href="mailto:vee@mail.com"
+              className="font-semibold text-base hover:text-linen-50 transition-colors duration-200">
+              vee@mail.com
+            </a>
+          </div>
+
+          {/* Tablet Social links */}
+          <div className="mb-12 text-sage-300">
+            <p className="text-sm mb-3">internet:</p>
+            <div className="flex gap-5">
+              <a
+                href="https://figma.com/@wafae"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base font-bold tracking-wider underline underline-offset-3 hover:text-linen-50 transition-colors duration-200">
+                Fig
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base font-bold tracking-wider underline underline-offset-3 hover:text-linen-50 transition-colors duration-200">
+                Gla
+              </a>
+              <a
+                href="https://github.com/veefa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base font-bold tracking-wider underline underline-offset-3 hover:text-linen-50 transition-colors duration-200">
+                Git
+              </a>
+              <a
+                href="https://linkedin.com/in/wafae"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base font-bold tracking-wider underline underline-offset-3 hover:text-linen-50 transition-colors duration-200">
+                Lin
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Tablet copyright - Fixed at bottom */}
+        <div className="bottom-6 left-0 right-0 z-10 fixed text-center">
+          <p className="text-olive-500 text-sm">© 2025</p>
+        </div>
+      </div>
+
+      {/* Desktop Layout (lg and above) */}
+      <div className="hidden lg:block mx-auto max-w-6xl min-h-screen relative">
+        {/* Desktop Left side navigation */}
+        <div className="top-8 left-8 z-10 fixed">
           <div className="flex flex-col items-start">
             <div className="mb-7 ml-4 border-olive-500 border-l-2 h-15" />
             <Link
@@ -26,45 +209,45 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* Menu button - Top right */}
-        <div className="top-9 right-12 z-10 fixed">
+        {/* Desktop Menu button - Top right */}
+        <div className="top-8 right-8 z-10 fixed">
           <Menu isOpen={isMenuOpen} onToggle={toggleMenu} />
         </div>
 
-        {/* Main content */}
-        <div className="flex flex-col justify-center items-start min-h-screen px-8 lg:px-16 lg:ml-20">
-          {/* Hello heading with background */}
+        {/* Desktop Main content */}
+        <div className="flex flex-col justify-center items-start min-h-screen px-16 ml-20">
+          {/* Desktop Hello heading with background */}
           <div className="mb-12">
             <div className="relative inline-block">
               <div className="left-7 absolute inset-x-4 bottom-8 bg-olive-500 opacity-90 h-1/3"></div>
-              <h1 className="font-Italiana text-9xl lg:text-8xl xl:text-9xl relative z-10 px-6 py-4 lg:px-8 lg:py-6">
+              <h1 className="font-Italiana text-8xl xl:text-9xl 2xl:text-10xl relative z-10 px-8 py-6">
                 Hello.
               </h1>
             </div>
           </div>
 
-          {/* Description text */}
+          {/* Desktop Description text */}
           <div className="mb-12 max-w-lg text-sage-300">
-            <p className="text-base lg:text-lg leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               Your ideas deserve more than a template.
             </p>
-            <p className="text-light lg:text-md leading-relaxed">
+            <p className="text-base leading-relaxed">
               Let's build a digital space that's uniquely yours — designed with
               intention, developed with care.
             </p>
           </div>
 
-          {/* Contact email */}
+          {/* Desktop Contact email */}
           <div className="mb-12 text-sage-300">
             <p className="text-base mb-2">E-mail:</p>
             <a
               href="mailto:vee@mail.com"
-              className="font-semibold text-lg hover:text-sage-300 transition-colors duration-200">
+              className="font-semibold text-lg hover:text-linen-50 transition-colors duration-200">
               vee@mail.com
             </a>
           </div>
 
-          {/* Social links */}
+          {/* Desktop Social links */}
           <div className="mb-16 text-sage-300">
             <p className="text-base mb-4">internet:</p>
             <div className="flex gap-6">
@@ -101,7 +284,7 @@ const Contact: React.FC = () => {
         </div>
 
         {/* Desktop copyright */}
-        <div className="bottom-8 left-8 fixed hidden lg:block">
+        <div className="bottom-8 left-8 fixed">
           <p className="text-olive-500 text-sm whitespace-nowrap -rotate-90 origin-bottom-left transform">
             © 2025
           </p>

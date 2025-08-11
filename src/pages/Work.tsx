@@ -95,7 +95,7 @@ const Work: React.FC = () => {
           ))}
         </div>
 
-        {/* Mobile Layout - Regular flow */}
+        {/* Mobile Layout */}
         <div className="lg:hidden px-6 pt-8 pb-16">
           {/* Mobile Projects List */}
           <div className="flex flex-col items-start space-y-6 mb-12 ml-4">
