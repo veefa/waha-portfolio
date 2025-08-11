@@ -17,8 +17,8 @@ const Home: React.FC = () => {
       <div className="bg-linen-50 min-h-screen w-full overflow-x-hidden text-graphite-900">
         {/* Mobile Layout */}
         <div className="2xl:hidden">
-          {/* Social Links and Menu - Social Links left, Menu right */}
-          <div className="flex justify-between items-start px-4 pt-4 pb-2">
+          {/* Social Links and Menu */}
+          <div className="flex justify-between items-start px-9 pt-9 pb-2">
             <div className="flex flex-row items-center gap-4">
               {socialLinks.map((link) => (
                 <a
@@ -26,7 +26,7 @@ const Home: React.FC = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-bold text-sm text-olive-500 hover:decoration-2 hover:decoration-lime-600 hover:underline hover:underline-offset-3 tracking-wide transition-colors duration-200"
+                  className="font-bold text-sm text-olive-500 hover:decoration-2 hover:decoration-sage-300 hover:underline hover:underline-offset-3 tracking-wide transition-colors duration-200"
                   style={{ letterSpacing: "0.05em" }}>
                   {link.label}
                 </a>
@@ -35,15 +35,18 @@ const Home: React.FC = () => {
             <Menu />
           </div>
 
-          {/* Header Navigation - Bigger size */}
+          {/* Header Navigation */}
           <div className="flex justify-center pb-4">
             <Header />
           </div>
         </div>
 
-        {/* Desktop Layout - Side by side */}
+        {/* Desktop Layout */}
         <div className="hidden 2xl:block">
-          <Menu />
+          <div className="flex justify-between items-start px-9 pt-9 pb-2">
+            <div></div>
+            <Menu />
+          </div>
           <Header />
         </div>
 
