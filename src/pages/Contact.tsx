@@ -11,14 +11,12 @@ const Contact: React.FC = () => {
 
   return (
     <div className="bg-neutral-800 w-screen min-h-screen overflow-x-hidden text-linen-50">
-      {/* Mobile Layout (sm and below) */}
+      {/* Mobile Layout */}
       <div className="md:hidden min-h-screen relative">
-        {/* Mobile menu button - Top right */}
         <div className="top-4 right-4 z-10 fixed">
           <Menu isOpen={isMenuOpen} onToggle={toggleMenu} />
         </div>
 
-        {/* Mobile Navigation */}
         <div className="pt-4 px-4">
           <Link
             to="/"
@@ -27,9 +25,7 @@ const Contact: React.FC = () => {
           </Link>
         </div>
 
-        {/* Mobile main content */}
         <div className="flex flex-col justify-center items-start min-h-screen px-4 py-12">
-          {/* Mobile Hello heading with background */}
           <div className="mb-6">
             <div className="relative inline-block">
               <div className="left-3 absolute inset-x-1 bottom-4 bg-olive-500 opacity-90 h-1/3"></div>
@@ -39,7 +35,6 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* Mobile Description text */}
           <div className="mb-6 max-w-xs text-sage-300">
             <p className="text-sm leading-relaxed mb-3">
               Your ideas deserve more than a template.
@@ -50,7 +45,6 @@ const Contact: React.FC = () => {
             </p>
           </div>
 
-          {/* Mobile Contact email */}
           <div className="mb-6 text-sage-300">
             <p className="text-xs mb-1">E-mail:</p>
             <a
@@ -60,7 +54,6 @@ const Contact: React.FC = () => {
             </a>
           </div>
 
-          {/* Mobile Social links */}
           <div className="mb-8 text-sage-300">
             <p className="text-xs mb-2">internet:</p>
             <div className="flex flex-wrap gap-3">
@@ -96,20 +89,17 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile copyright - Fixed at bottom */}
         <div className="bottom-4 left-0 right-0 z-10 fixed text-center">
           <p className="text-olive-500 text-xs">© 2025</p>
         </div>
       </div>
 
-      {/* Tablet Layout (md to lg) */}
+      {/* Tablet Layout */}
       <div className="hidden md:block lg:hidden min-h-screen relative">
-        {/* Tablet menu button - Top right */}
         <div className="top-6 right-6 z-10 fixed">
           <Menu isOpen={isMenuOpen} onToggle={toggleMenu} />
         </div>
 
-        {/* Tablet Navigation */}
         <div className="pt-6 px-6">
           <Link
             to="/"
@@ -118,9 +108,7 @@ const Contact: React.FC = () => {
           </Link>
         </div>
 
-        {/* Tablet main content */}
         <div className="flex flex-col justify-center items-start min-h-screen px-8 py-16">
-          {/* Tablet Hello heading with background */}
           <div className="mb-10">
             <div className="relative inline-block">
               <div className="left-5 absolute inset-x-3 bottom-6 bg-olive-500 opacity-90 h-1/3"></div>
@@ -130,7 +118,6 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* Tablet Description text */}
           <div className="mb-10 max-w-md text-sage-300">
             <p className="text-base leading-relaxed mb-4">
               Your ideas deserve more than a template.
@@ -141,7 +128,6 @@ const Contact: React.FC = () => {
             </p>
           </div>
 
-          {/* Tablet Contact email */}
           <div className="mb-10 text-sage-300">
             <p className="text-sm mb-2">E-mail:</p>
             <a
@@ -151,7 +137,6 @@ const Contact: React.FC = () => {
             </a>
           </div>
 
-          {/* Tablet Social links */}
           <div className="mb-12 text-sage-300">
             <p className="text-sm mb-3">internet:</p>
             <div className="flex gap-5">
@@ -187,15 +172,13 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* Tablet copyright - Fixed at bottom */}
         <div className="bottom-6 left-0 right-0 z-10 fixed text-center">
           <p className="text-olive-500 text-sm">© 2025</p>
         </div>
       </div>
 
-      {/* Desktop Layout (lg and above) */}
+      {/* Desktop Layout */}
       <div className="hidden lg:block mx-auto max-w-6xl min-h-screen relative">
-        {/* Desktop Left side navigation */}
         <div className="top-8 left-8 z-10 fixed">
           <div className="flex flex-col items-start">
             <div className="mb-7 ml-4 border-olive-500 border-l-2 h-15" />
@@ -209,14 +192,11 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* Desktop Menu button - Top right */}
         <div className="top-8 right-8 z-10 fixed">
           <Menu isOpen={isMenuOpen} onToggle={toggleMenu} />
         </div>
 
-        {/* Desktop Main content */}
         <div className="flex flex-col justify-center items-start min-h-screen px-16 ml-20">
-          {/* Desktop Hello heading with background */}
           <div className="mb-12">
             <div className="relative inline-block">
               <div className="left-7 absolute inset-x-4 bottom-8 bg-olive-500 opacity-90 h-1/3"></div>
@@ -226,7 +206,6 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* Desktop Description text */}
           <div className="mb-12 max-w-lg text-sage-300">
             <p className="text-lg leading-relaxed mb-4">
               Your ideas deserve more than a template.
@@ -237,7 +216,6 @@ const Contact: React.FC = () => {
             </p>
           </div>
 
-          {/* Desktop Contact email */}
           <div className="mb-12 text-sage-300">
             <p className="text-base mb-2">E-mail:</p>
             <a
@@ -247,7 +225,6 @@ const Contact: React.FC = () => {
             </a>
           </div>
 
-          {/* Desktop Social links */}
           <div className="mb-16 text-sage-300">
             <p className="text-base mb-4">internet:</p>
             <div className="flex gap-6">
@@ -283,7 +260,6 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* Desktop copyright */}
         <div className="bottom-8 left-8 fixed">
           <p className="text-olive-500 text-sm whitespace-nowrap -rotate-90 origin-bottom-left transform">
             © 2025

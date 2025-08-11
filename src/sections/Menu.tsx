@@ -19,33 +19,29 @@ const Menu: React.FC<MenuProps> = ({ isOpen = false, onToggle }) => {
   };
 
   return (
-    <div className="relative">
-      {/* Menu Controls - hamburger menu */}
+    <>
       <div className="flex flex-col items-end gap-1 min-w-[50px]">
-        {/* Menu icon (hamburger) — only shows when menu is closed */}
-        {!menuOpen && (
-          <button
-            onClick={toggleMenu}
-            className="hover:bg-olive-500 hover:bg-opacity-20 p-3 rounded transition text-sage-300"
-            aria-label="Toggle menu">
-            <svg
-              width="42"
-              height="28"
-              viewBox="0 0 42 28"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="3">
-              <line x1="3" y1="6" x2="42" y2="6"></line>
-              <line x1="15" y1="18" x2="42" y2="18"></line>
-            </svg>
-          </button>
-        )}
+        <button
+          onClick={toggleMenu}
+          className={`hover:bg-olive-500 hover:bg-opacity-20 p-3 rounded transition text-sage-300 ${
+            menuOpen ? "opacity-0 pointer-events-none" : ""
+          }`}
+          aria-label="Toggle menu">
+          <svg
+            width="42"
+            height="28"
+            viewBox="0 0 42 28"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3">
+            <line x1="3" y1="6" x2="42" y2="6"></line>
+            <line x1="15" y1="18" x2="42" y2="18"></line>
+          </svg>
+        </button>
       </div>
 
-      {/* Fixed Overlay Menu - positioned independently without affecting page layout */}
       {menuOpen && (
-        <div className="top-4 right-4 z-50 fixed space-y-2 bg-olive-500 shadow-lg px-4 pt-2 pb-4 rounded min-w-[160px] text-linen-50">
-          {/* Close button inside menu */}
+        <div className="fixed top-4 right-4 z-50 space-y-2 bg-olive-500 shadow-lg px-4 pt-2 pb-4 rounded min-w-[160px] text-linen-50">
           <div className="flex justify-end mb-2">
             <button
               onClick={closeMenu}
@@ -54,8 +50,6 @@ const Menu: React.FC<MenuProps> = ({ isOpen = false, onToggle }) => {
               <X size={20} className="text-white" />
             </button>
           </div>
-
-          {/* Resume + E-mail as specified in design */}
           <a
             href="/resume.pdf"
             target="_blank"
@@ -72,7 +66,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen = false, onToggle }) => {
           </a>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <div className="bg-linen-50 min-h-screen w-full overflow-x-hidden text-neutral-800">
       <div className="mx-auto max-w-6xl min-h-screen px-4 sm:px-6 lg:px-8">
-        {/* Left side navigation */}
+        {/* Vertical navigation sidebar with decorative lines */}
         <div className="top-8 left-4 sm:left-8 fixed z-20">
           <div className="flex flex-col items-start">
             <div className="mb-7 ml-4 border-olive-500 border-l-2 h-15" />
@@ -19,15 +19,16 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Profile image - Top on small screens */}
+        {/* Profile image - Mobile/tablet centered at top */}
         <div className="flex justify-center pt-20 pb-8 lg:hidden">
           <div className="border-4 border-sage-300 rounded-sm w-48 h-60 sm:w-56 sm:h-70"></div>
         </div>
 
-        {/* Main Content */}
+        {/* Main content area with responsive layout */}
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start pt-8 lg:pt-20 pr-4 sm:pr-8 pl-16 sm:pl-20 pb-8">
-          {/* Left Content Area */}
+          {/* Content section */}
           <div className="max-w-2xl w-full lg:w-auto">
+            {/* Page title with decorative background highlight */}
             <div className="text-center mb-8">
               <h1 className="inline-block z-1 relative font-Italiana text-graphite-700 text-5xl sm:text-6xl lg:text-7xl cursor-pointer">
                 <span
@@ -38,6 +39,7 @@ const About: React.FC = () => {
               </h1>
             </div>
 
+            {/* Bio introduction paragraphs */}
             <div className="space-y-4  text-olive-500 text-sm leading-relaxed">
               <p>
                 I'm VEEFA. A frontend developer, web content builder, and
@@ -64,7 +66,7 @@ const About: React.FC = () => {
               </p>
             </div>
 
-            {/* Quote Section */}
+            {/* Inspirational quote section */}
             <div className="my-5 py-2">
               <p className="text-olive-500 text-sm font-extralight italic">
                 One quote that guides me by Maya Angelou:
@@ -75,7 +77,7 @@ const About: React.FC = () => {
               </blockquote>
             </div>
 
-            {/* Experience Section */}
+            {/* Professional experience and background */}
             <div className="mb-8">
               <h3 className="mb-4 font-semibold text-olive-500 text-md">
                 Experience
@@ -123,7 +125,7 @@ const About: React.FC = () => {
               </div>
             </div>
 
-            {/* Skills Section */}
+            {/* Technical skills and competencies */}
             <div>
               <h3 className="mb-4 font-semibold text-olive-500 text-md">
                 Skills
@@ -138,13 +140,13 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Profile image - Right side on large screens */}
+          {/* Profile image - Desktop right side */}
           <div className="hidden lg:flex flex-shrink-0 lg:ml-12">
             <div className="border-4 border-sage-300 rounded-sm w-64 h-80"></div>
           </div>
         </div>
 
-        {/* Bottom left copyright */}
+        {/* Fixed copyright footer */}
         <div className="bottom-8 left-4 sm:left-8 fixed">
           <p className="text-olive-500 text-sm whitespace-nowrap -rotate-90 origin-bottom-left transform">
             © 2025
