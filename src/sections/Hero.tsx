@@ -2,23 +2,23 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <div className="flex flex-row items-start w-full min-h-screen">
-      <div className="mx-auto lg:left lg:mr-auto lg:ml-50 max-w-2xl text-center lg:text-left">
+    <div className="flex flex-row items-start w-full">
+      <div className="mx-auto max-w-fit text-center lg:text-left">
         {/* Main Name */}
-        <h1 className="relative mb-7 pb-1 border-olive-500 border-b-4 font-Italiana font-light text-olive-500 sm:text-1xl text-2xl lg:text-5xl tracking-wider">
+        <h1 className="relative mb-4 pb-1 border-olive-500 border-b-2 font-Italiana font-light text-olive-500 sm:text-lg text-base lg:text-xl tracking-wider inline-block">
           WAFAE HAMDAOUI
         </h1>
 
         {/* Subtitle */}
-        <div className="mb-4 font-light text-sage-300 text-lg sm:text-xl">
+        <div className="mb-3 font-light text-olive-500 text-sm sm:text-sm max-w-fit">
           Frontend Developer / React & Typescript Enthusiast /
         </div>
-        <div className="mb-8 font-light text-sage-300 text-lg sm:text-xl">
+        <div className="mb-6 font-light text-olive-500 text-xs sm:text-sm max-w-fit">
           Productivity App Creator
         </div>
 
         {/* Description */}
-        <div className="text-sage-300 text-base sm:text-lg leading-relaxed">
+        <div className="text-olive-500 font-light text-xs sm:text-sm leading-relaxed max-w-fit">
           <p>Currently focused on building intuitive web apps that help</p>
           <p>people manage time and boost focus.</p>
         </div>

@@ -8,14 +8,14 @@ const About: React.FC = () => {
         {/* Vertical navigation sidebar with decorative lines */}
         <div className="top-8 left-4 sm:left-8 fixed z-20">
           <div className="flex flex-col items-start">
-            <div className="mb-7 ml-4 border-olive-500 border-l-2 h-15" />
+            <div className="mb-7 ml-4 border-olive-500 border-l-1 h-15" />
             <Link
               to="/"
-              className="font-semibold text-sage-300 hover:text-olive-500 text-lg hover:decoration-3 hover:decoration-olive-500 hover:underline whitespace-nowrap rotate-180 origin-center transition-colors transform"
+              className="font-semibold text-sage-300 hover:text-olive-500 text-sm hover:decoration-3 hover:decoration-olive-500 hover:underline whitespace-nowrap rotate-180 origin-center transition-colors transform"
               style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}>
               Home
             </Link>
-            <div className="mt-7 ml-4 border-olive-500 border-l-2 h-55" />
+            <div className="mt-7 ml-4 border-olive-500 border-l-1 h-55" />
           </div>
         </div>
 
@@ -148,7 +148,7 @@ const About: React.FC = () => {
 
         {/* Fixed copyright footer */}
         <div className="bottom-8 left-4 sm:left-8 fixed">
-          <p className="text-olive-500 text-sm whitespace-nowrap -rotate-90 origin-bottom-left transform">
+          <p className="text-olive-500 text-xs whitespace-nowrap -rotate-90 origin-bottom-left transform">
             © 2025
           </p>
         </div>

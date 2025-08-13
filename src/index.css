@@ -3,6 +3,11 @@
 
 @import "tailwindcss";
 @theme {
+  --breakpoint-mobile: 767px; /* mobile max width */
+  --breakpoint-tablet-min: 768px; /* tablet min width */
+  --breakpoint-desktop: 1200px; /* desktop min width (fits 13.6" 2560x1664) */
+  --breakpoint-ultrawide: 2560px;
+
   --color-sage-300: rgb(161, 177, 132);
   --color-olive-500: rgb(98, 106, 72);
   --color-graphite-700: rgb(64, 64, 64);
@@ -14,19 +19,22 @@
     "Courier New", monospace;
   --font-Italiana: "Italiana", serif;
 }
-
-/* 
-.mylink {
-  position: relative;
+/* Custom responsive utilities using your CSS variable breakpoint */
+@layer utilities {
+  @media (min-width: var(--breakpoint-desktop)) {
+    .desktop\:block {
+      display: block !important;
+    }
+    .desktop\:hidden {
+      display: none !important;
+    }
+    .desktop\:flex {
+      display: flex !important;
+    }
+  }
+  @media (max-width: calc(var(--breakpoint-desktop) - 1px)) {
+    .desktop\:hidden {
+      display: block !important;
+    }
+  }
 }
-
-.mylink::after {
-  position: absolute;
-  content: "";
-  background: red;
-  height: 30px;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-}
-*/
