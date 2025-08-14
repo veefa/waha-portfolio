@@ -13,13 +13,13 @@ const Work: React.FC = () => {
       name: "lazy schedule",
       category: "productivity",
       tech: "React, TypeScript, Tailwind",
-      link: "https://lazy-schedule-veefa.vercel.app",
+      link: "https://lazyschedule.netlify.app/",
     },
     {
       name: "chore wheel",
       category: "productivity",
       tech: "React, TypeScript, Tailwind",
-      link: "https://chore-wheel-veefa.vercel.app",
+      link: "https://chorewheel.netlify.app/",
     },
     {
       name: "timer",
