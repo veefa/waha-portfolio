@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
   return (
-    <div className="bg-linen-50 min-h-screen w-full overflow-x-hidden text-neutral-800">
+    <div className="bg-graphite-700 min-h-screen w-full overflow-x-hidden text-neutral-800">
       <div className="mx-auto max-w-6xl min-h-screen px-4 sm:px-6 lg:px-8">
         {/* Vertical navigation sidebar with decorative lines */}
         <div className="top-8 left-4 sm:left-8 fixed z-20">
@@ -30,9 +30,9 @@ const About: React.FC = () => {
           <div className="max-w-2xl w-full lg:w-auto">
             {/* Page title with decorative background highlight */}
             <div className="text-center mb-8">
-              <h1 className="inline-block z-1 relative font-Italiana text-graphite-700 text-5xl sm:text-6xl lg:text-7xl cursor-pointer">
+              <h1 className="inline-block z-1 relative font-Italiana text-linen-50 text-5xl sm:text-6xl lg:text-7xl cursor-pointer">
                 <span
-                  className="top-3/5 left-1 -z-10 absolute bg-sage-300 group-hover:opacity-90 h-1/2 transition-all -translate-y-1/2 duration-200"
+                  className="top-3/5 left-1 -z-10 absolute bg-olive-500 group-hover:opacity-90 h-1/2 transition-all -translate-y-1/2 duration-200"
                   style={{ width: "calc(100% - 8px)" }}
                 />
                 about.
@@ -40,7 +40,7 @@ const About: React.FC = () => {
             </div>
 
             {/* Bio introduction paragraphs */}
-            <div className="space-y-4  text-olive-500 text-sm leading-relaxed">
+            <div className="space-y-4  text-sage-300 text-sm leading-relaxed">
               <p>
                 I'm VEEFA. A frontend developer, web content builder, and
                 productivity-focused problem solver.
@@ -68,10 +68,10 @@ const About: React.FC = () => {
 
             {/* Inspirational quote section */}
             <div className="my-5 py-2">
-              <p className="text-olive-500 text-sm font-extralight italic">
+              <p className="text-sage-300 text-sm font-extralight italic">
                 One quote that guides me by Maya Angelou:
               </p>
-              <blockquote className="mt-2 text-olive-500  font-Italiana font-bold">
+              <blockquote className="mt-2 text-sage-300  font-Italiana font-bold">
                 “Do the best you can until you know better. Then when you know
                 better, do better.”
               </blockquote>
@@ -79,10 +79,10 @@ const About: React.FC = () => {
 
             {/* Professional experience and background */}
             <div className="mb-8">
-              <h3 className="mb-4 font-semibold text-olive-500 text-md">
+              <h3 className="mb-4 font-semibold text-sage-300 text-md">
                 Experience
               </h3>
-              <ul className="text-olive-500 text-sm leading-relaxed">
+              <ul className="text-sage-300 text-sm leading-relaxed">
                 <li>
                   • Bachelor's Degree in Applied Mathematics and Computer
                   Science
@@ -97,10 +97,10 @@ const About: React.FC = () => {
               </ul>
 
               <div className="mt-3">
-                <p className="mb-4 font-semibold text-olive-500 text-md">
+                <p className="mb-4 font-semibold text-sage-300 text-md">
                   During time, I've:
                 </p>
-                <ul className="text-olive-500 text-sm leading-relaxed">
+                <ul className="text-sage-300 text-sm leading-relaxed">
                   <li>
                     • Designed and built, productivity apps using React +
                     TypeScript + Tailwind
@@ -127,10 +127,10 @@ const About: React.FC = () => {
 
             {/* Technical skills and competencies */}
             <div>
-              <h3 className="mb-4 font-semibold text-olive-500 text-md">
+              <h3 className="mb-4 font-semibold text-sage-300 text-md">
                 Skills
               </h3>
-              <p className="text-olive-500 text-sm leading-relaxed">
+              <p className="text-sage-300 text-sm leading-relaxed">
                 Frontend Development / UI Design / Product Thinking / Problem
                 Solving / React / TypeScript / JavaScript / HTML & CSS /
                 Tailwind CSS / SVG Design / Figma / Git / Responsive Design /

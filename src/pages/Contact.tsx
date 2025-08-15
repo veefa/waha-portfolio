@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="bg-neutral-800 w-screen min-h-screen overflow-x-hidden text-linen-50">
+    <div className="bg-graphite-700 w-screen min-h-screen overflow-x-hidden text-linen-50">
       {/* Mobile Layout */}
       <div className="md:hidden min-h-screen relative">
         <div className="top-4 right-4 z-10 fixed">
