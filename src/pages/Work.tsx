@@ -42,7 +42,7 @@ const Work: React.FC = () => {
   ];
 
   return (
-    <div className="bg-neutral-800 w-screen min-h-screen overflow-x-hidden text-sage-300">
+    <div className="bg-graphite-700 w-screen min-h-screen overflow-x-hidden text-sage-300">
       <div className="mx-auto max-w-6xl min-h-screen">
         {/* Left side navigation - Desktop only */}
         <div className="top-8 left-8 z-10 fixed hidden lg:block">
