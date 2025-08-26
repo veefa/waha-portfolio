@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         animate={{ y: 0 }}
         transition={{
           type: "tween",
-          duration: 1.5,
+          duration: 1,
           ease: [0.25, 0.46, 0.45, 0.94],
           delay: 0.3, // Small delay to show the dark curtain first
         }}

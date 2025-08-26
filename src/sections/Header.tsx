@@ -38,7 +38,7 @@ const Header: React.FC = () => {
                 {link === "work" || link === "about" || link === "contact" ? (
                   <Link
                     to={`/${link}`}
-                    className="group inline-block relative font-Italiana font-normal text-[3.5rem] text-graphite-700 leading-none"
+                    className="group inline-block relative font-Italiana font-normal text-[6.5rem] text-graphite-700 leading-none"
                     style={{ lineHeight: 1.1 }}>
                     <span
                       className="top-2/3 left- -z-10 absolute bg-sage-300 opacity-70 group-hover:opacity-90 h-1/3 transition-all -translate-y-1/2 duration-200"
@@ -98,7 +98,7 @@ const Header: React.FC = () => {
                 <Link to={`/${link}`} className="group inline-block relative">
                   <Stret
                     text={link}
-                    className="font-Italiana font-normal text-[9rem] text-graphite-700 leading-none"
+                    className="font-Italiana font-normal text-[12rem] text-graphite-700 leading-none"
                   />
                   <span
                     className="top-2/3 left-0 -z-10 absolute bg-sage-300 opacity-70 group-hover:opacity-90 h-1/3 transition-all -translate-y-1/2 duration-200"
