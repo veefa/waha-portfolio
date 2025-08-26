@@ -7,7 +7,7 @@ const socialLinks = [
   { label: "Fig", href: "https://figma.com/@wafae" },
   { label: "Drb", href: "https://dribbble.com/VEEFA" },
   { label: "Git", href: "https://github.com/veefa" },
-  { label: "Lin", href: "https://linkedin.com/in/wafae" },
+  { label: "Lin", href: "https://www.linkedin.com/in/wafae-hamdawy" },
 ];
 
 const Header: React.FC = () => {
