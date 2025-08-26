@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Stret } from "../components/Stretch";
 
 const navLinks = ["work", "about", "contact"] as const;
 const socialLinks = [
@@ -94,15 +95,15 @@ const Header: React.FC = () => {
           <ul className="space-y-3">
             {navLinks.map((link) => (
               <li key={link}>
-                <Link
-                  to={`/${link}`}
-                  className="group inline-block relative font-Italiana font-normal text-[9rem] text-graphite-700 leading-none"
-                  style={{ lineHeight: 1.1 }}>
+                <Link to={`/${link}`} className="group inline-block relative">
+                  <Stret
+                    text={link}
+                    className="font-Italiana font-normal text-[9rem] text-graphite-700 leading-none"
+                  />
                   <span
                     className="top-2/3 left-0 -z-10 absolute bg-sage-300 opacity-70 group-hover:opacity-90 h-1/3 transition-all -translate-y-1/2 duration-200"
                     style={{ width: "calc(100% + 8px)" }}
                   />
-                  {link}
                 </Link>
               </li>
             ))}
