@@ -16,11 +16,11 @@ const Home: React.FC = () => {
         animate={{ y: 0 }}
         transition={{
           type: "tween",
-          duration: 1,
+          duration: 1.5,
           ease: [0.25, 0.46, 0.45, 0.94],
           delay: 0.3, // Small delay to show the dark curtain first
         }}
-        className="bg-linen-50 w-full h-full text-graphite-900 relative z-10">
+        className="bg-linen-200 w-full h-full text-graphite-900 relative z-10">
         {/* Mobile & Tablet Layout */}
         <div className="desktop:hidden w-full h-full">
           {/* Menu */}
