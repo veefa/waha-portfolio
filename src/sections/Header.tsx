@@ -5,7 +5,7 @@ import { Stret } from "../components/Stretch";
 const navLinks = ["work", "about", "contact"] as const;
 const socialLinks = [
   { label: "Fig", href: "https://figma.com/@wafae" },
-  { label: "Fla", href: "#flaticon" },
+  { label: "Drb", href: "https://dribbble.com/VEEFA" },
   { label: "Git", href: "https://github.com/veefa" },
   { label: "Lin", href: "https://linkedin.com/in/wafae" },
 ];

@@ -80,11 +80,11 @@ const Contact: React.FC = () => {
                   Fig
                 </a>
                 <a
-                  href="#"
+                  href="https://dribbble.com/VEEFA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-bold tracking-wider underline underline-offset-2 hover:text-linen-50 transition-colors duration-200">
-                  Gla
+                  Drb
                 </a>
                 <a
                   href="https://github.com/veefa"
@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
                   Git
                 </a>
                 <a
-                  href="https://linkedin.com/in/wafae"
+                  href="https://www.linkedin.com/in/wafae-hamdawy/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-bold tracking-wider underline underline-offset-2 hover:text-linen-50 transition-colors duration-200">
