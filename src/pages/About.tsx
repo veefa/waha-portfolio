@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import profileImage from "../assets/profile.png";
 
 const About: React.FC = () => {
   return (
@@ -21,7 +22,13 @@ const About: React.FC = () => {
 
         {/* Profile image - Mobile/tablet centered at top */}
         <div className="flex justify-center pt-20 pb-8 lg:hidden">
-          <div className="border-4 border-sage-300 rounded-sm w-48 h-60 sm:w-56 sm:h-70"></div>
+          <div className=" rounded-sm w-48 h-60 sm:w-56 sm:h-70 overflow-hidden opacity-65 shadow-xl shadow-sage-300/20">
+            <img
+              src={profileImage}
+              alt="Veefa's profile"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
         {/* Main content area with responsive layout */}
@@ -142,7 +149,13 @@ const About: React.FC = () => {
 
           {/* Profile image - Desktop right side */}
           <div className="hidden lg:flex flex-shrink-0 lg:ml-12">
-            <div className="border-4 border-sage-300 rounded-sm w-64 h-80"></div>
+            <div className="rounded-sm w-64 h-80 overflow-hidden opacity-65 shadow-xl shadow-sage-300/20">
+              <img
+                src={profileImage}
+                alt="Veefa's profile"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
 
