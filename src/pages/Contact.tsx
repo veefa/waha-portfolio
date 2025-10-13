@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
               <p className="text-xs mb-2">internet:</p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://figma.com/@wafae"
+                  href="https://www.figma.com/@veefa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-bold tracking-wider underline underline-offset-2 hover:text-linen-50 transition-colors duration-200">
