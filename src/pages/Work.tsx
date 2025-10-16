@@ -27,19 +27,19 @@ const Work: React.FC = () => {
       name: "timer",
       category: "productivity",
       tech: "React, TypeScript, Tailwind",
-      link: "https://timer-veefa.vercel.app",
+      link: "https://timerv.netlify.app/",
     },
     {
       name: "habit tracker",
       category: "productivity",
       tech: "React, TypeScript, Firebase, Tailwind",
-      link: "https://habit-tracker-veefa.vercel.app",
+      link: "https://habittrackerv.netlify.app/",
     },
     {
       name: "todo",
       category: "productivity",
       tech: "React, TypeScript, LocalStorage, Tailwind",
-      link: "https://todo-veefa.vercel.app",
+      link: "https://todo-veefa.netlify.app/",
     },
   ];
 
