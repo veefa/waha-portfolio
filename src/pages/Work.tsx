@@ -9,7 +9,7 @@ const Work: React.FC = () => {
       name: "taskflow",
       category: "productivity",
       tech: "React, TypeScript, Vite, Tailwind",
-      link: "https://taskflow-veefa.vercel.app",
+      link: "https://taskflowv.netlify.app/",
     },
     {
       name: "lazy schedule",
