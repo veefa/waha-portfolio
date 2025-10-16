@@ -41,6 +41,12 @@ const Work: React.FC = () => {
       tech: "React, TypeScript, LocalStorage, Tailwind",
       link: "https://todo-veefa.netlify.app/",
     },
+    {
+      name: "profile",
+      category: "introduction",
+      tech: "React, JavaScript, Nextjs, Tailwind",
+      link: "https://veefa.netlify.app/",
+    },
   ];
 
   return (
