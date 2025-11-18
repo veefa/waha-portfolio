@@ -27,7 +27,7 @@ const Work: React.FC = () => {
       name: "pomodoro",
       category: "productivity",
       tech: "React, TypeScript, Tailwind",
-      link: "https://pomodorove.netlify.app/",
+      link: "https://pomodorotimerve.netlify.app/",
     },
     {
       name: "habit tracker",
