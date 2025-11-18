@@ -24,10 +24,10 @@ const Work: React.FC = () => {
       link: "https://chorewheel.netlify.app/",
     },
     {
-      name: "timer",
+      name: "pomodorotimer",
       category: "productivity",
       tech: "React, TypeScript, Tailwind",
-      link: "https://timerv.netlify.app/",
+      link: "https://pomodorove.netlify.app/timer/",
     },
     {
       name: "habit tracker",
