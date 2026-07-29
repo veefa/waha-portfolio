@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import profileImage from "../assets/profile.png";
 
 const About: React.FC = () => {
   return (
@@ -9,7 +8,7 @@ const About: React.FC = () => {
       {/* Dark Graphite Curtain Background */}
       <div className="bg-linen-50 w-full h-full absolute inset-0" />
 
-      {/* Page Content with Curtain Slide-Up Animation */}
+
       <motion.div
         initial={{ y: "100vh" }}
         animate={{ y: 0 }}
@@ -38,16 +37,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Profile image - Mobile/tablet centered at top */}
-          <div className="flex justify-center pt-20 pb-8 lg:hidden">
-            <div className=" rounded-sm w-48 h-60 sm:w-56 sm:h-70 overflow-hidden opacity-65 shadow-xl shadow-sage-300/20">
-              <img
-                src={profileImage}
-                alt="Veefa's profile"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
+            
 
           {/* Main content area with responsive layout */}
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start pt-8 lg:pt-20 pr-4 sm:pr-8 pl-16 sm:pl-20 pb-8">
@@ -174,36 +164,7 @@ const About: React.FC = () => {
             </div>
 
             {/* Profile image - Desktop right side */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{
-                opacity: 1,
-                scale: 1,
-                y: [0, -10, 0],
-              }}
-              transition={{
-                opacity: { duration: 0.8, delay: 1.0 },
-                scale: { duration: 0.8, delay: 1.0 },
-                y: {
-                  duration: 3,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  ease: "easeInOut",
-                },
-              }}
-              whileHover={{
-                scale: 1.05,
-                rotate: 2,
-              }}
-              className="hidden lg:flex flex-shrink-0 lg:ml-12">
-              <div className="rounded-sm w-64 h-80 overflow-hidden opacity-65 shadow-xl shadow-sage-300/20">
-                <img
-                  src={profileImage}
-                  alt="Veefa's profile"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </motion.div>
+           
           </div>
 
           {/* Fixed copyright footer */}
