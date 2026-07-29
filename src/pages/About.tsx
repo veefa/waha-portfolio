@@ -8,7 +8,6 @@ const About: React.FC = () => {
       {/* Dark Graphite Curtain Background */}
       <div className="bg-linen-50 w-full h-full absolute inset-0" />
 
-
       <motion.div
         initial={{ y: "100vh" }}
         animate={{ y: 0 }}
@@ -36,8 +35,6 @@ const About: React.FC = () => {
               <div className="mt-7 ml-4 border-olive-500 border-l-1 h-55" />
             </div>
           </div>
-
-            
 
           {/* Main content area with responsive layout */}
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start pt-8 lg:pt-20 pr-4 sm:pr-8 pl-16 sm:pl-20 pb-8">
@@ -164,7 +161,6 @@ const About: React.FC = () => {
             </div>
 
             {/* Profile image - Desktop right side */}
-           
           </div>
 
           {/* Fixed copyright footer */}
